@@ -1,27 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff; /* Change this hex code if you want a different background color */
-        }
-        img {
-            max-width: 90%;
-            max-height: 80vh;
-            object-fit: contain;
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cooktopia</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family:Inter,sans-serif;
+    background:#faf7f2;
+    color:#2f2f2f;
+}
+
+h1,h2,h3{
+    font-family:"Playfair Display",serif;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.button{
+    background:#31543C;
+    color:white;
+    padding:15px 35px;
+    border-radius:999px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#25412f;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:40px;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+</style>
+
 </head>
+
 <body>
-    <img src="logo.png" alt="Logo">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<img src="logo.png" style="width:170px;margin:auto;margin-bottom:25px;">
+
+<h1 style="font-size:64px;">Cooktopia</h1>
+
+<p style="font-size:22px;margin-top:20px;max-width:700px;margin-left:auto;margin-right:auto;">
+
+Freshly made food and handcrafted baked goods,
+prepared with care.
+
+</p>
+
+<br><br>
+
+<a class="button" href="#collections">
+
+Explore Menu
+
+</a>
+
+</div>
+
+</section>
+
+<!-- COLLECTIONS -->
+
+<section id="collections" class="section">
+
+<h2 style="text-align:center;font-size:44px;margin-bottom:60px;">
+
+Our Collections
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3 style="font-size:34px;">
+
+🍰 Baked Goods
+
+</h3>
+
+<p style="margin-top:20px;line-height:1.8;">
+
+Fresh cakes, cookies, pastries, desserts and seasonal
+treats made to order.
+
+</p>
+
+<br>
+
+<a class="button" href="#">
+
+Browse Baked Goods
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3 style="font-size:34px;">
+
+🍛 Ethnic Kitchen
+
+</h3>
+
+<p style="margin-top:20px;line-height:1.8;">
+
+Traditional home-style meals, festive dishes and
+special menus prepared with authentic recipes.
+
+</p>
+
+<br>
+
+<a class="button" href="#">
+
+Browse Meals
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY -->
+
+<section class="section">
+
+<h2 style="text-align:center;font-size:44px;">
+
+Why Cooktopia
+
+</h2>
+
+<br><br>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Fresh Ingredients</h3>
+
+<p>Every order is prepared using carefully selected ingredients.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Small Batches</h3>
+
+<p>Made in limited quantities for quality and consistency.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Made with Care</h3>
+
+<p>Every dish and dessert is prepared with attention to detail.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer style="padding:50px;text-align:center;background:#31543C;color:white;">
+
+<img src="logo.png" width="70">
+
+<p style="margin-top:15px;">
+
+© 2026 Cooktopia
+
+</p>
+
+</footer>
+
 </body>
 </html>
-
